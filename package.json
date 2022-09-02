@@ -1,5 +1,5 @@
 {
-  "name": "@wcd/typhoidmarty.textarea-fork-l7k0aasf",
+  "name": "@wcd/typhoidmarty.utm-builder",
   "version": "0.0.1",
   "scripts": {
     "serve": "npx wcd-cli@latest serve 3829WI3B3aGW6zYLqCWT --open"
