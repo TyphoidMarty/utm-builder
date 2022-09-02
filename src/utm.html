@@ -1,0 +1,20 @@
+<template>
+    <div class="slds-m-vertical_medium">
+        <h1 class="slds-text-heading_small">UTM Builder</h1>
+        <p class="slds-text-body_regular">Takes a link and adds Google UTM Params.</p>
+    </div>
+
+    <div class="row">
+        <lightning-textarea name="input1" required placeholder="The base url link" label="Base Link"
+            onchange={handleBaseLinkInputChange}></lightning-textarea>
+        <lightning-textarea name="input2" placeholder="UTM Source - eg specific area, template or source"
+            label="UTM Source" onchange={handleUTMSourceInputChange}></lightning-textarea>
+        <lightning-combobox name="select1" label="UTM Medium" value={value} placeholder="None" options={options}
+            onchange={handleUTMMediumChange}></lightning-combobox>
+        <lightning-textarea name="input3" placeholder="UTM Campaign - situational, tied to specific marketing efforts"
+            label="UTM Campaign" onchange={handleUTMCampaignInputChange}></lightning-textarea>
+        <p class="slds-text-body_regular">
+            Full Link: {fullLink}
+        </p>
+    </div>
+</template>
